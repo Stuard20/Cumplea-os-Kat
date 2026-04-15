@@ -32,34 +32,53 @@ def set_background(image_file):
 set_background('acuarela-corazones-patrones-fisuras_1108-561.jpeg')
 
 # --------- ESTILOS CSS ACTUALIZADOS ---------
+# --------- ESTILOS CSS CORREGIDOS ---------
 st.markdown("""
 <style>
-/* ... tus otros estilos (title, subtitle, letter) ... */
-
-/* CAMBIOS A NEGRO SOLICITADOS */
-
-/* 1. Caption de la imagen */
-[data-testid="stImageCaption"] {
+/* 1. Título y Subtítulo en Negro */
+.title-text {
     color: #000000 !important;
-    font-size: 16px !important;
+    font-size: 50px;
     font-weight: bold;
+    text-align: center;
+}
+.subtitle-text {
+    color: #000000 !important;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* 2. Texto del st.success */
-.stAlert {
-    background-color: rgba(255, 255, 255, 0.7) !important; /* Fondo clarito para que resalte el negro */
-    border: 1px solid #ffb6c1 !important;
+/* 2. La Carta: Fondo claro para que la letra NEGRA se vea perfecta */
+.letter {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco casi sólido */
+    color: #000000 !important;           /* LETRA NEGRA */
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #ffb6c1;           /* Borde rosa para que combine */
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+/* 3. Color negro para Captions y mensajes de éxito */
+[data-testid="stImageCaption"] {
+    color: #000000 !important;
+    font-weight: bold;
 }
 
 .stAlert p {
     color: #000000 !important;
-    font-weight: bold !important;
 }
 
-/* 3. Título de la pestaña (esto es interno del navegador, 
-   pero podemos asegurar que el cuerpo sea negro si hay textos sueltos) */
-body {
-    color: #000000;
+/* 4. Botón con texto negro */
+.stButton>button {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #000000 !important;
+    font-weight: bold;
+    border-radius: 10px;
 }
 </style>
 """, unsafe_allow_html=True)
