@@ -29,7 +29,7 @@ def set_background(image_file):
 
 # --- APLICA TU IMAGEN DE FONDO AQUÍ ---
 # Asegúrate de que el nombre del archivo sea exacto
-set_background('WhatsApp Image 2026-04-11 at 10.03.07 AM.jpeg')
+set_background('acuarela-corazones-patrones-fisuras_1108-561.jpeg')
 
 # --------- ESTILOS CSS ---------
 st.markdown("""
@@ -99,7 +99,7 @@ if st.button("💌 Abrir carta"):
     st.session_state.mostrar_carta = True
 
 if st.session_state.mostrar_carta:
-    mensaje = "Feliz cumpleaños cientificaaa 🧬💚.\n\nEspero te la pases muy bien con las personas que quieres mucho.\n\nDisfruta siempre de todo, y se feliz Kat, aca siempre te deseo lo mejor, tqm cientifica, .\n\nAtentamente tu amigo fiel el hombre araña:)"
+    mensaje = "Feliz cumpleaños cientificaaa 🧬💚.\n\nEspero te la pases muy bien con las personas que quieres mucho.\n\nDisfruta siempre de todo, y se feliz Kat, aca siempre te deseo lo mejor, tqm mi cientifica favorita.\n\nAtentamente tu amigo el sistemas:)"
     
     placeholder = st.empty()
     texto_acumulado = ""
@@ -111,13 +111,13 @@ if st.session_state.mostrar_carta:
     
     # Imagen después de la carta
     st.image("WhatsApp Image 2026-04-11 at 10.03.07 AM.jpeg", 
-             caption="¡Tu genialidad no tiene límites! ✨", 
+             caption="¡Que me invite a comer la cumpleañeraa! <3", 
              use_container_width=True)
 
 # --------- EXTRAS ---------
 st.write("")
 if st.button("🎈 Más sorpresa"):
     st.balloons()
-    st.success("¡Que todos tus deseos se hagan realidad! ✨")
+    st.success("¡Que todos tus deseos se hagan realidad, y que seas muy muy feliz! ✨")
 
 st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWxhb21mOTE1ZWVyYjAxa2tqeXJtZHYwZWd3cXh5bDBkZmtvbDljNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hktQ1EEDYax9o7puSD/giphy.gif", width=300)
