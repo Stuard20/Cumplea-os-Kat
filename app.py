@@ -31,43 +31,61 @@ def set_background(image_file):
 # Asegúrate de que el nombre del archivo sea exacto
 set_background('acuarela-corazones-patrones-fisuras_1108-561.jpeg')
 
-# --------- ESTILOS CSS ---------
+# --------- ESTILOS CSS ACTUALIZADOS ---------
 st.markdown("""
 <style>
+/* Título en un tono fucsia/oscuro para que resalte sobre el blanco */
 .title-text {
-    color: #00ffe0;
+    color: #d63384; 
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0 0 15px #00ffe0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
+
+/* Subtítulo en gris oscuro/negro */
 .subtitle-text {
-    color: #ffffff;
-    font-size: 20px;
+    color: #444444;
+    font-size: 22px;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 30px;
 }
+
+/* La carta: fondo semi-transparente claro para que se vea el fondo de corazones 
+   pero el texto sea negro y legible */
 .letter {
-    background: rgba(0, 0, 0, 0.8);
-    color: #00ff9d;
+    background: rgba(255, 255, 255, 0.85);
+    color: #222222;
     padding: 25px;
     border-radius: 15px;
-    font-size: 18px;
+    border: 2px solid #ffb6c1; /* Borde rosa pastel */
+    font-size: 19px;
     line-height: 1.6;
-    box-shadow: 0px 0px 20px rgba(0,255,150,0.5);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
     margin-top: 20px;
     white-space: pre-wrap;
+    font-weight: 450;
 }
+
+/* Botones con colores que combinen con el rosa */
 .stButton>button {
-    background: linear-gradient(45deg, #00ffe0, #00ff9d);
-    color: black;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333333;
+    border: none;
     font-weight: bold;
     border-radius: 10px;
     width: 100%;
+    transition: 0.3s;
+}
+
+.stButton>button:hover {
+    border-color: #ff9a9e;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 </style>
 """, unsafe_allow_html=True)
-
 st.markdown('<h1 class="title-text">🧬 ¡Feliz Cumpleaños Kat! 🧪</h1>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle-text">Hoy celebramos una mente brillante llena de vida 💚</p>', unsafe_allow_html=True)
 
