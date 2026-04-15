@@ -34,55 +34,32 @@ set_background('acuarela-corazones-patrones-fisuras_1108-561.jpeg')
 # --------- ESTILOS CSS ACTUALIZADOS ---------
 st.markdown("""
 <style>
-/* Título en un tono fucsia/oscuro para que resalte sobre el blanco */
-.title-text {
-    color: #d63384; 
-    font-size: 50px;
+/* ... tus otros estilos (title, subtitle, letter) ... */
+
+/* CAMBIOS A NEGRO SOLICITADOS */
+
+/* 1. Caption de la imagen */
+[data-testid="stImageCaption"] {
+    color: #000000 !important;
+    font-size: 16px !important;
     font-weight: bold;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Subtítulo en gris oscuro/negro */
-.subtitle-text {
-    color: #444444;
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 30px;
+/* 2. Texto del st.success */
+.stAlert {
+    background-color: rgba(255, 255, 255, 0.7) !important; /* Fondo clarito para que resalte el negro */
+    border: 1px solid #ffb6c1 !important;
 }
 
-/* La carta: fondo semi-transparente claro para que se vea el fondo de corazones 
-   pero el texto sea negro y legible */
-.letter {
-    background: rgba(255, 255, 255, 0.85);
-    color: #222222;
-    padding: 25px;
-    border-radius: 15px;
-    border: 2px solid #ffb6c1; /* Borde rosa pastel */
-    font-size: 19px;
-    line-height: 1.6;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-    margin-top: 20px;
-    white-space: pre-wrap;
-    font-weight: 450;
+.stAlert p {
+    color: #000000 !important;
+    font-weight: bold !important;
 }
 
-/* Botones con colores que combinen con el rosa */
-.stButton>button {
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-    color: #333333;
-    border: none;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 100%;
-    transition: 0.3s;
-}
-
-.stButton>button:hover {
-    border-color: #ff9a9e;
+/* 3. Título de la pestaña (esto es interno del navegador, 
+   pero podemos asegurar que el cuerpo sea negro si hay textos sueltos) */
+body {
     color: #000000;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 </style>
 """, unsafe_allow_html=True)
@@ -136,6 +113,6 @@ if st.session_state.mostrar_carta:
 st.write("")
 if st.button("🎈 Más sorpresa"):
     st.balloons()
-    st.success("¡Que todos tus deseos se hagan realidad, y que seas muy muy feliz! ✨")
+    st.success("¡Que todos tus deseos se hagan realidad, y que seas muy muy feliz siempre! ✨")
 
 st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWxhb21mOTE1ZWVyYjAxa2tqeXJtZHYwZWd3cXh5bDBkZmtvbDljNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hktQ1EEDYax9o7puSD/giphy.gif", width=300)
